@@ -19,9 +19,9 @@ public class ${name} extends Biome{
             .precipitation(Precipitation.<#if (data.rainingPossibility > 0)><#if (data.temperature > 0.15)>RAIN<#else>SNOW</#if><#else>NONE</#if>)
             .downfall(${data.rainingPossibility}f)
             <#if data.customColors>
-            .waterColor(${data.waterColor.getRGB()}).waterFogColor(${data.waterColor.getRGB()})
+            .effects(new BiomeEffects.Builder().waterColor(${data.waterColor.getRGB()}).waterFogColor(${data.waterColor.getRGB()}).moodSound(BiomeMoodSound.CAVE).build())
             <#else>
-            .waterColor(4159204).waterFogColor(329011)
+            .effects(new BiomeEffects.Builder().waterColor(4159204).waterFogColor(329011).moodSound(BiomeMoodSound.CAVE).build())
             </#if>
             <#if data.parent?? && data.parent.getUnmappedValue() != "No parent">
             .parent("${data.parent}")
