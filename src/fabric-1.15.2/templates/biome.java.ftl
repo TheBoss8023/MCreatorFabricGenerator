@@ -4,6 +4,8 @@ package ${package}.world.biome;
 import net.fabricmc.fabric.api.biomes.v1.OverworldClimate;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.world.biome.BiomeEffects;
+import net.minecraft.sound.BiomeMoodSound;
 
 public class ${name} extends Biome{
 
