@@ -1,4 +1,4 @@
-name: Minecraft Fabric for 1.15.2 (@buildfileversion)
+name: Minecraft Fabric for 1.16 (@buildfileversion)
 basefeatures: [model_json,model_obj]
 partial_support: [block,item,food,armor,biome]
 status: stable
