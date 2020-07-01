@@ -8,7 +8,7 @@ gradle:
   setup_task: genSources
   run_client: runClient
   run_server: runServer
-  export_file: "build/libs/sources.jar"
+  export_file: "build/libs/modid-1.0.jar"
 
 source_root: "@WORKSPACEROOT/src/main/java"
 res_root: "@WORKSPACEROOT/src/main/resources"
