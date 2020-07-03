@@ -1,8 +1,8 @@
-name: Minecraft Fabric for 1.16 (@buildfileversion)
+name: Minecraft Fabric for 1.16.1 (@buildfileversion)
 basefeatures: [model_json,model_obj]
 partial_support: [block,item,food,armor,biome]
 status: stable
-buildfileversion: 0.8.8+build.202
+buildfileversion: 0.8.9+build.203
 
 gradle:
   setup_task: genSources
