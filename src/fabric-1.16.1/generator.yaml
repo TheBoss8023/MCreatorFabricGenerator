@@ -5,7 +5,7 @@ status: stable
 buildfileversion: 0.8.9+build.203
 
 gradle:
-  setup_task: genSources
+  setup_task: tasks
   run_client: runClient
   run_server: runServer
   export_file: "build/libs/modid-1.0.jar"
