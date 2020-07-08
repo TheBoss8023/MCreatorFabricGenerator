@@ -31,11 +31,6 @@ public class ${name} extends
 		public static final DirectionProperty FACING = FacingBlock.FACING;
 		</#if>
 
-    @Override
-    public int getLuminance(BlockState state) {
-        return ${(data.luminance * 15)?round};
-    }
-
 		@Override
     public int getOpacity(BlockState state, BlockView view, BlockPos pos) {
         return ${data.lightOpacity};
@@ -89,11 +84,6 @@ public class ${name} extends
 	        builder.add(FACING);
 	    }
 			</#if>
-
-			@Override
-    	public int getTickRate(WorldView worldView) {
-        	return ${data.tickRate};
-    	}
 
 			<#if data.dropAmount != 1 && !(data.customDrop?? && !data.customDrop.isEmpty())>
 			@Override
