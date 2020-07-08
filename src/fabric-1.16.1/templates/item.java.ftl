@@ -18,7 +18,7 @@ public class ${name} extends Item{
     <#if data.hasGlow>
     @Environment(EnvType.CLIENT)
     @Override
-    public boolean hasEnchantmentGlint(ItemStack stack){
+    public boolean hasGlint(ItemStack stack){
         return true;
     }
     </#if>
@@ -30,18 +30,6 @@ public class ${name} extends Item{
   	     tooltip.add(new LiteralText("${JavaConventions.escapeStringForJava(entry)}"));
          </#list>
 		}
-    </#if>
-
-    <#if data.enableMeleeDamage>
-    @Override
-    public Multimap<String, EntityAttributeModifier> getModifiers(EquipmentSlot slot){
-        Multimap<String, EntityAttributeModifier> map = super.getModifiers(slot);
-        if(slot == EquipmentSlot.MAINHAND){
-            map.put(EntityAttributes.ATTACK_DAMAGE.getId(), new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_UUID, "item_damage", (double) ${data.damageVsEntity - 2}, EntityAttributeModifier.Operation.ADDITION));
-            map.put(EntityAttributes.ATTACK_SPEED.getId(), new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_UUID, "item_attack_speed", -2.4, EntityAttributeModifier.Operation.ADDITION));
-        }
-        return map;
-    }
     </#if>
 
     @Override
