@@ -190,20 +190,6 @@ public class ${name} extends
 }
 		</#if>
 
-		<#if data.hasTransparency>
-		@Override
-    public boolean isSimpleFullBlock(BlockState state, BlockView view, BlockPos pos) {
-        return false;
-    }
-		</#if>
-
-		<#if data.connectedSides>
-		@Environment(EnvType.CLIENT)
-    @Override
-    public boolean isSideInvisible(BlockState state, BlockState neighbor, Direction facing) {
-        return true;
-    }
-		</#if>
 
 		public void genBlock(Biome biome){
 			<#list data.spawnWorldTypes as worldType>
