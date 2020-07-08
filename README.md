@@ -1,7 +1,6 @@
 **THIS IS THE DEVELOPMENT BRANCH FOR 1.16. DO NOT USE THIS UNLESS YOU WANT THE BLEEDING EDGE VERSION OF THIS TOOL.**
 # MCreatorFabricGenerator
-
-An unofficial plugin for [MCreator](https://mcreator.net/), a code generator to create Minecraft mods. Adds a [Fabric](https://fabricmc.net/) code generator type. Currently, this tool is very incomplete.
+An unofficial plugin for [MCreator](https://mcreator.net/), a code generator to create Minecraft mods. Adds a [Fabric](https://fabricmc.net/) mod generator type. Currently, this tool is very incomplete.
 
 ## Disclaimer
 
