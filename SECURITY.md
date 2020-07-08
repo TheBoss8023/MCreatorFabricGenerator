@@ -20,6 +20,6 @@ Version | Supported
 
 ## Reporting a Vulnerability
 
-If you happen to find a security vulnerability in MCreatorFabricGenerator, immediately report an issue with the bug fix template. Issues that have [SECURITY] in their title will be handled as soon as possible after review.
+If you happen to find a security vulnerability in MCreatorFabricGenerator, ping us in our discord or open an issue with the title having a [SECURITY] prefix
 
 Depending on the severity, it can take up to a few days to fix. **MCreatorFabricGenerator is not affiliated with MCreator. Report vulnerabilities with it only to us.**

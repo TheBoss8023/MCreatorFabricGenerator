@@ -28,8 +28,8 @@ public class ${JavaModName}Biomes {
     </#list>
   }
 
-  private static Biome register(Biome biome, String ID) {
-		return Registry.register(Registry.BIOME, ID, biome);
+  private static Biome register(Biome biome, String id) {
+		return Registry.register(Registry.BIOME, id, biome);
 	}
 
 }
